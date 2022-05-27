@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pete e o Repete</title>
+    <style>
+        div {
+            background: red;
+            width: 500px;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        #erro {
+            margin-top: 50%;
+            text-align: center;
+            color: white;
+            font: normal 40pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p id="erro"></p>
+    </div>
+    <script>
+        do {
+            window.alert("Tinha o Pete e o Repete, o Pete morreu, quem ficou?")
+            var resposta = window.prompt("")
+            resposta = resposta.toLowerCase()
+        } while (resposta == "repete")
+        var errado = document.getElementById("erro")
+        errado.innerHTML = ("Resposta errada.")
+    </script>
+</body>
+
+</html>
